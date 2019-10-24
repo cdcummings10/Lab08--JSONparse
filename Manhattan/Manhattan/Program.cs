@@ -21,10 +21,9 @@ namespace Manhattan
                 }
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
-                throw;
+                Console.WriteLine(e.Message); ;
             }
             JArray data = (JArray)json["features"];
             List<Neighborhood> hoodList = new List<Neighborhood>();
